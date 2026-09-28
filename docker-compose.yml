@@ -1,0 +1,24 @@
+# Local PostgreSQL 16 + PostGIS 3.4 for the IRIS pilot schema.
+# Host port 55432 avoids clashing with any locally installed PostgreSQL.
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: iris-postgis
+    environment:
+      POSTGRES_USER: iris
+      POSTGRES_PASSWORD: iris          # local-only development credential
+      POSTGRES_DB: iris
+    ports:
+      - "55432:5432"
+    volumes:
+      # Mount a single file so the image's own 10_postgis.sh init script is not hidden.
+      - ./docker/initdb/20-create-test-db.sql:/docker-entrypoint-initdb.d/20-create-test-db.sql:ro
+      - iris-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iris -d iris"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  iris-pgdata:

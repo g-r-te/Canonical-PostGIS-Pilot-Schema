@@ -1,0 +1,111 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-M001",
+      "properties": {
+        "region_code": "DE-BY",
+        "peat_class": "fen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.602,
+              48.302
+            ],
+            [
+              11.605,
+              48.302
+            ],
+            [
+              11.605,
+              48.306
+            ],
+            [
+              11.602,
+              48.306
+            ],
+            [
+              11.602,
+              48.302
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-M002",
+      "properties": {
+        "region_code": "DE-BY",
+        "peat_class": "bog"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.65,
+              48.31
+            ],
+            [
+              11.655,
+              48.31
+            ],
+            [
+              11.655,
+              48.314
+            ],
+            [
+              11.65,
+              48.314
+            ],
+            [
+              11.65,
+              48.31
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-M003",
+      "properties": {
+        "region_code": "DE-BY",
+        "peat_class": "swamp",
+        "_fixture_note": "peat_class outside vocabulary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.66,
+              48.31
+            ],
+            [
+              11.662,
+              48.31
+            ],
+            [
+              11.662,
+              48.312
+            ],
+            [
+              11.66,
+              48.312
+            ],
+            [
+              11.66,
+              48.31
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

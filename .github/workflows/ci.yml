@@ -1,0 +1,34 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: iris
+          POSTGRES_PASSWORD: iris
+          POSTGRES_DB: iris_test
+        ports: ["55432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U iris -d iris_test"
+          --health-interval 2s --health-timeout 3s --health-retries 30
+    env:
+      IRIS_DATABASE_URL: postgresql://iris:iris@localhost:55432/iris_test
+      IRIS_TEST_DATABASE_URL: postgresql://iris:iris@localhost:55432/iris_test
+      IRIS_REQUIRE_DB: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check . && ruff format --check .
+      - name: Rebuild from empty schema and verify
+        run: iris-db rebuild --yes
+      - run: pytest -v

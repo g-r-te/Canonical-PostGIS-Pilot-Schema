@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "DE-SYN-N2K-001",
+      "properties": {
+        "region_code": "DE-BY",
+        "layer_code": "natura2000",
+        "layer_category": "exclusion",
+        "applies_to": [
+          "bess"
+        ],
+        "feature_name": "Synthetic SAC Isarauen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.619,
+              48.299
+            ],
+            [
+              11.623,
+              48.299
+            ],
+            [
+              11.623,
+              48.302
+            ],
+            [
+              11.619,
+              48.302
+            ],
+            [
+              11.619,
+              48.299
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DE-SYN-HQ100-001",
+      "properties": {
+        "layer_code": "flood_zone_hq100",
+        "layer_category": "restriction",
+        "applies_to": [
+          "bess",
+          "peatland"
+        ],
+        "feature_name": "Synthetic HQ100 flood zone (national layer)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.598,
+              48.306
+            ],
+            [
+              11.601,
+              48.306
+            ],
+            [
+              11.601,
+              48.31
+            ],
+            [
+              11.598,
+              48.31
+            ],
+            [
+              11.598,
+              48.306
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

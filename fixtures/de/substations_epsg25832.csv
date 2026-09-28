@@ -1,0 +1,5 @@
+source_feature_id,name,operator,voltage_kv,easting,northing,region_code
+DE-SYN-UW-001,UW Synthetic Nord,Synthetic DSO,110,693734.88,5353110.52,DE-BY
+DE-SYN-UW-002,UW Synthetic Ost,Synthetic TSO,380,700033.2,5358725.46,DE-BY
+DE-SYN-UW-003,UW Synthetic Sued,Synthetic DSO,,691736.94,5351818.89,DE-BY
+DE-SYN-UW-004,UW Synthetic West,Synthetic DSO,110,,5355109.99,DE-BY

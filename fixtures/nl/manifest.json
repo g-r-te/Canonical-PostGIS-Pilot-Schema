@@ -1,0 +1,44 @@
+{
+  "country_code": "NL",
+  "description": "Minimal synthetic NL-FR set delivered in the Dutch national CRS (EPSG:28992, RD New). Proves the adapters are country- and CRS-aware; not part of the one-region pilot slice.",
+  "sources": [
+    {
+      "source_id": "nl-fr-cadastre-synthetic",
+      "entity": "parcel",
+      "file": "parcels_epsg28992.csv",
+      "format": "csv_wkt",
+      "srid": 28992,
+      "source_date": "2026-06-30",
+      "region_code": "NL-FR",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "complete",
+      "positional_accuracy_m": 0.5
+    },
+    {
+      "source_id": "nl-fr-peatland-synthetic",
+      "entity": "peatland",
+      "file": "peatlands_epsg28992.csv",
+      "format": "csv_wkt",
+      "srid": 28992,
+      "source_date": "2026-04-30",
+      "region_code": "NL-FR",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "partial"
+    },
+    {
+      "source_id": "nl-grid-substations-synthetic",
+      "entity": "substation",
+      "file": "substations_epsg28992.csv",
+      "format": "csv_points",
+      "srid": 28992,
+      "source_date": "2026-05-15",
+      "region_code": "NL-FR",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "unknown"
+    }
+  ],
+  "derive": {
+    "region_code": "NL-FR",
+    "as_of_date": "2026-07-01"
+  }
+}

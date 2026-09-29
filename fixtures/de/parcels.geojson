@@ -1,0 +1,248 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P001",
+      "properties": {
+        "region_code": "DE-BY",
+        "cadastral_ref": "DEBY-0917-0001",
+        "land_use": "arable"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.6,
+              48.3
+            ],
+            [
+              11.604,
+              48.3
+            ],
+            [
+              11.604,
+              48.303
+            ],
+            [
+              11.6,
+              48.303
+            ],
+            [
+              11.6,
+              48.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P002",
+      "properties": {
+        "region_code": "DE-BY",
+        "cadastral_ref": "DEBY-0917-0002",
+        "land_use": "grassland"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.606,
+              48.3
+            ],
+            [
+              11.61,
+              48.3
+            ],
+            [
+              11.61,
+              48.303
+            ],
+            [
+              11.606,
+              48.303
+            ],
+            [
+              11.606,
+              48.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P003",
+      "properties": {
+        "region_code": "DE-BY",
+        "cadastral_ref": "DEBY-0917-0003",
+        "land_use": "grassland"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.6,
+              48.305
+            ],
+            [
+              11.604,
+              48.305
+            ],
+            [
+              11.604,
+              48.308
+            ],
+            [
+              11.6,
+              48.308
+            ],
+            [
+              11.6,
+              48.305
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P004",
+      "properties": {
+        "region_code": "DE-BY",
+        "cadastral_ref": "DEBY-0917-0004",
+        "land_use": "arable"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.62,
+                48.3
+              ],
+              [
+                11.624,
+                48.3
+              ],
+              [
+                11.624,
+                48.303
+              ],
+              [
+                11.62,
+                48.303
+              ],
+              [
+                11.62,
+                48.3
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.625,
+                48.3
+              ],
+              [
+                11.627,
+                48.3
+              ],
+              [
+                11.627,
+                48.302
+              ],
+              [
+                11.625,
+                48.302
+              ],
+              [
+                11.625,
+                48.3
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P005",
+      "properties": {
+        "region_code": "DE-BY",
+        "cadastral_ref": "DEBY-0917-0005",
+        "land_use": "arable",
+        "_fixture_note": "self-intersecting bow-tie polygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.63,
+              48.3
+            ],
+            [
+              11.634,
+              48.303
+            ],
+            [
+              11.634,
+              48.3
+            ],
+            [
+              11.63,
+              48.303
+            ],
+            [
+              11.63,
+              48.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEBY-SYN-P006",
+      "properties": {
+        "cadastral_ref": "DEBY-0917-0006",
+        "land_use": "arable",
+        "_fixture_note": "region_code missing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.64,
+              48.3
+            ],
+            [
+              11.642,
+              48.3
+            ],
+            [
+              11.642,
+              48.302
+            ],
+            [
+              11.64,
+              48.302
+            ],
+            [
+              11.64,
+              48.3
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

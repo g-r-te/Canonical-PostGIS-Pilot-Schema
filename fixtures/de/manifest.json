@@ -1,0 +1,59 @@
+{
+  "country_code": "DE",
+  "description": "Synthetic one-region vertical slice (DE-BY). Not real cadastral, grid or environmental data.",
+  "sources": [
+    {
+      "source_id": "de-by-cadastre-synthetic",
+      "entity": "parcel",
+      "file": "parcels.geojson",
+      "format": "geojson",
+      "srid": 4326,
+      "source_date": "2026-06-30",
+      "region_code": "DE-BY",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "complete",
+      "positional_accuracy_m": 0.5
+    },
+    {
+      "source_id": "de-by-peatland-synthetic",
+      "entity": "peatland",
+      "file": "peatlands.geojson",
+      "format": "geojson",
+      "srid": 4326,
+      "source_date": "2026-03-31",
+      "region_code": "DE-BY",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "partial",
+      "positional_accuracy_m": 25
+    },
+    {
+      "source_id": "de-grid-substations-synthetic",
+      "entity": "substation",
+      "file": "substations_epsg25832.csv",
+      "format": "csv_points",
+      "x_field": "easting",
+      "y_field": "northing",
+      "srid": 25832,
+      "source_date": "2026-05-15",
+      "region_code": "DE-BY",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "unknown"
+    },
+    {
+      "source_id": "de-screening-synthetic",
+      "entity": "screening_layer",
+      "file": "screening_layers.geojson",
+      "format": "geojson",
+      "srid": 4326,
+      "source_date": "2026-01-31",
+      "license": "CC0-1.0 (synthetic test fixture)",
+      "completeness": "partial"
+    }
+  ],
+  "derive": {
+    "region_code": "DE-BY",
+    "as_of_date": "2026-07-01",
+    "max_substation_distance_m": 20000,
+    "eco_points_per_m2": 8
+  }
+}

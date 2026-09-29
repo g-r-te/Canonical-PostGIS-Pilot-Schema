@@ -17,6 +17,20 @@ Requirements: Docker (for PostgreSQL 16 + PostGIS 3.4) and Python 3.12+.
 docker compose up -d --wait
 ```
 
+Install into a virtual environment. Debian/Ubuntu block system-wide `pip install`
+(`error: externally-managed-environment`, PEP 668), and a venv keeps the project isolated
+everywhere else too. On Debian/Ubuntu, install `python3-venv` first if `venv` is missing.
+
+```bash
+python3 -m venv .venv
+```
+
+```bash
+source .venv/bin/activate
+```
+
+On Windows (PowerShell), activate with `.venv\Scripts\Activate.ps1` instead.
+
 ```bash
 python -m pip install -e ".[dev]"
 ```
